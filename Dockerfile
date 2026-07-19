@@ -18,6 +18,9 @@ COPY tiling_engine.py .
 COPY hardware_control.py .
 COPY recovery_agent.py .
 
+# 在 COPY 命令下方加入此行，確保依賴包被正確安裝
+RUN pip install --no-cache-dir -r requirements.txt
+
 # 開放去中心化 P2P 網格通訊專屬硬體端口 (NTU 變形路由埠)
 EXPOSE 8084
 
