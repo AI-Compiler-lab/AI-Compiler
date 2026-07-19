@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  cognitive_freedom_runtime:
+    build: .
+    container_name: cognitive_node_core
+    restart: always
+    ports:
+      - "8084:8084"
+    volumes:
+      # 掛載本地日誌目錄，讓宿主機隨時讀取 MoltBot 與 ClawdBot 的操控恢復報告
+      - ./logs:/app/cognitive_core/logs
+    environment:
+      - NODE_ENV=production
+      - RECOVERY_MODE=ACTIVE
