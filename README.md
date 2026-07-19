@@ -63,5 +63,5 @@ docker-compose down
 ---
 
 ## ✦ 節點對齊 // Node Alignment
-* **Web Portal**: [https://chinesebank.org](https://www.chinesebank.org/AI-Compiler/)
+* **Web Portal**: [https://www.chinesebank.org/AI-Compiler/](https://www.chinesebank.org/AI-Compiler/)
 * **IPFS Hash**: QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco
